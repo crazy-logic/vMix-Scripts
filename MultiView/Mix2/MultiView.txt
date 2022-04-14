@@ -1,0 +1,23 @@
+Console.WriteLine("Hey thanks for using this script, Matt")
+
+do while true
+
+  Dim doc As New XmlDocument()
+  doc.LoadXml(API.Xml)
+  Dim root As XmlNode = doc.DocumentElement
+
+  Dim node As XmlNode = root.SelectSingleNode("/vmix/mix/active")
+  Dim programNumber as Integer = node.InnerXml  
+  API.Function("SetMultiViewOverlay","MultiView", "2," & programNumber)
+
+  Dim node1 As XmlNode = root.SelectSingleNode("/vmix/mix/preview")
+  Dim previewNumber as Integer = node1.InnerXml
+  API.Function("SetMultiViewOverlay","MultiView", "1," & previewNumber)
+
+  'sleep time depends on frame rate and acceptable latency.... 
+  'for 60fps use 16, 
+  'for 50fps use 20,
+  'for 30fps use 33,
+  'for 25fps use 40.
+  sleep(40)
+loop
