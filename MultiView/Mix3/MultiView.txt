@@ -6,11 +6,11 @@ do while true
   doc.LoadXml(API.Xml)
   Dim root As XmlNode = doc.DocumentElement
 
-  Dim node As XmlNode = root.SelectSingleNode("/vmix/mix2/active")
+  Dim node As XmlNode = root.SelectSingleNode("/vmix/mix[2]/active")
   Dim programNumber as Integer = node.InnerXml  
   API.Function("SetMultiViewOverlay","MultiView", "2," & programNumber)
 
-  Dim node1 As XmlNode = root.SelectSingleNode("/vmix/mix2/preview")
+  Dim node1 As XmlNode = root.SelectSingleNode("/vmix/mix[2]/preview")
   Dim previewNumber as Integer = node1.InnerXml
   API.Function("SetMultiViewOverlay","MultiView", "1," & previewNumber)
 
