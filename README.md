@@ -5,7 +5,7 @@ A collection of scripts for vMix.
 ### MultiView  
 
 Custom multiview with Program and Preview for vMix - similar to that found in the atem switchers. 
-The folders of Mix2,3,4 contain the XML Lines for Mixes 2, 3 and 4. 
+The folders of Mix2,3,4 contain the XML Lines for Mixes 2, 3 and 4. Thanks to Howlswolf on the vMix forums for the additional mix XML strings. 
 You'll need the vMixLayout file for the overlay preset and then the MultiView.txt file as a script. 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=nQqyBCKVPos
