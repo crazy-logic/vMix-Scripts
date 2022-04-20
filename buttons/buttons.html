@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>vMix Buttons by Crazy-Logic</title>
+
+<script type="text/javascript">
+
+
+function vMixFunction(vFunction,vAddress)
+{
+	var connection = new XMLHttpRequest();
+	//http://192.168.122.199:8088/api/?Function=Merge&Input=1&Duration=500&Mix=0
+	connection.open("GET", "http://"+vAddress+"/api/?"+vFunction, false);
+	connection.send( null );
+}
+</script>
+
+</head>
+<body>
+  
+  
+<button type="button" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0','192.168.122.199:8088')">Take 1</button>
+
+<button type="button" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0','192.168.122.199:8088')">Take 2 </button>
+
+<button type="button" onClick="vMixFunction('Function=OverlayInput3&Input=4','192.168.122.199:8088')">Overlay 3</button>
+
+
+
+</body>
+</html>
