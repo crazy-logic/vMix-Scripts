@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>vMix Buttons by Crazy-Logic</title>
+
+<script type="text/javascript">
+
+
+function vMixFunction(vFunction,vAddress)
+{
+	var connection = new XMLHttpRequest();
+	//http://192.168.122.199:8088/api/?Function=Merge&Input=1&Duration=500&Mix=0
+	connection.open("GET", "http://"+vAddress+"/api/?"+vFunction, false);
+	connection.send( null );
+}
+</script>
+
+</head>
+<body>
+
+
+<button type="button" onClick="vMixFunction('Function=SetText&Input=MattsTitle&Value=hahahaha&SelectedName=Message.Text','200.0.10.55:8088')">Change Text</button>
+
+
+
+
+
+
+</body>
+</html>
