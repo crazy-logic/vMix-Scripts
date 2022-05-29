@@ -28,30 +28,61 @@ function vMixFunction(vFunction,vAddress)
   <h3>ME1</h3>
   	<div class="w3-container w3-black w3-border	">
   	<p>Program</p>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input1</button>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input2</button>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input3</button>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input4</button>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input5</button>  		 
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input6</button> 
-  	</div>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  	 	style="height:70px;width:70px;" 
+  	 	OnClick="vMixFunction('Function=CutDirect&Input=1&Mix=0','192.168.122.199:8088')"
+  	 	>Input1</button>
+  	 	<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  	 	style="height:70px;width:70px;" 
+  	 	OnClick="vMixFunction('Function=CutDirect&Input=2&Mix=0','192.168.122.199:8088')"
+  	 	>Input2</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  	 	style="height:70px;width:70px;" 
+  	 	OnClick="vMixFunction('Function=CutDirect&Input=3&Mix=0','192.168.122.199:8088')"
+  	 	>Input3</button>
+  	 	<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  	 	style="height:70px;width:70px;" 
+  	 	OnClick="vMixFunction('Function=CutDirect&Input=4&Mix=0','192.168.122.199:8088')"
+  	 	>Input4</button>
+  	 </div>
+  		
 
 	<div class="w3-container w3-black w3-border	">
 	  <p>Preview</p>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input1</button>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input2</button>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input3</button>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input4</button>
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input5</button>  		 
-  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input6</button> 
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  		style="height:70px;width:70px;" 
+  		OnClick="vMixFunction('Function=PreviewInput&Input=1&Mix=0','192.168.122.199:8088')"
+  		>Input1</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  		style="height:70px;width:70px;" 
+  		OnClick="vMixFunction('Function=PreviewInput&Input=2&Mix=0','192.168.122.199:8088')"
+  		>Input2</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  		style="height:70px;width:70px;" 
+  		OnClick="vMixFunction('Function=PreviewInput&Input=3&Mix=0','192.168.122.199:8088')"
+  		>Input3</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  		style="height:70px;width:70px;" 
+  		OnClick="vMixFunction('Function=PreviewInput&Input=4&Mix=0','192.168.122.199:8088')"
+  		>Input4</button>
+  		
 	</div>
 </div>
 
 <div class="w3-container w3-black w3-cell">
   <h3>Transition</h3>
-  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Take</button>
-  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Fade</button>
-  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Merge</button>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  style="height:70px;width:70px;" 
+  OnClick="vMixFunction('Function=Fade&Duration=0&Mix=0','192.168.122.199:8088')" 
+  >Take</button>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  style="height:70px;width:70px;" 
+  OnClick="vMixFunction('Function=Fade&Mix=0','192.168.122.199:8088')" 
+  >Fade</button>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" 
+  style="height:70px;width:70px;" 
+  OnClick="vMixFunction('Function=Merge&Mix=0','192.168.122.199:8088')"
+  >Merge</button>
 </div>
 
 <div class="w3-container w3-black w3-cell">
@@ -65,9 +96,6 @@ function vMixFunction(vFunction,vAddress)
  
  
   
-<button type="button" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0','192.168.122.199:8088')">Take 1</button>
-
-<button type="button" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0','192.168.122.199:8088')">Take 2 </button>
 
 <button type="button" onClick="vMixFunction('Function=OverlayInput3&Input=4','192.168.122.199:8088')">Overlay 3</button>
 
