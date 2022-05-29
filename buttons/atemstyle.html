@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>vMix Buttons by Crazy-Logic</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<script type="text/javascript">
+
+
+function vMixFunction(vFunction,vAddress)
+{
+	var connection = new XMLHttpRequest();
+	//http://192.168.122.199:8088/api/?Function=Merge&Input=1&Duration=500&Mix=0
+	connection.open("GET", "http://"+vAddress+"/api/?"+vFunction, false);
+	connection.send( null );
+}
+</script>
+
+</head>
+<body class="w3-black">
+  
+<div class="w3-center">
+<h1>vMix HTML Control</h1></br>
+</div>
+
+<div class="w3-cell-row">
+<div class="w3-container w3-black w3-cell">
+  <h3>ME1</h3>
+  	<div class="w3-container w3-black w3-border	">
+  	<p>Program</p>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input1</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input2</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input3</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input4</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input5</button>  		 
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input6</button> 
+  	</div>
+
+	<div class="w3-container w3-black w3-border	">
+	  <p>Preview</p>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input1</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input2</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input3</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input4</button>
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input5</button>  		 
+  		<button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Input6</button> 
+	</div>
+</div>
+
+<div class="w3-container w3-black w3-cell">
+  <h3>Transition</h3>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Take</button>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Fade</button>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Merge</button>
+</div>
+
+<div class="w3-container w3-black w3-cell">
+  <h3>DSK</h3>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Overlay1</button>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Overlay2</button>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Overlay3</button>
+  <button class="w3-button w3-round-large w3-grey w3-center w3-padding-small" style="height:70px;width:70px;">Overlay4</button>
+</div>
+</div>
+ 
+ 
+  
+<button type="button" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0','192.168.122.199:8088')">Take 1</button>
+
+<button type="button" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0','192.168.122.199:8088')">Take 2 </button>
+
+<button type="button" onClick="vMixFunction('Function=OverlayInput3&Input=4','192.168.122.199:8088')">Overlay 3</button>
+
+
+
+</body>
+</html>
